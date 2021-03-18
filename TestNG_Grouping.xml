@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke TestSuite">
+	<test name="Groups demo">
+		<groups>
+			<run>
+				<include name="cars"></include>
+				<include name="bike"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="TestNGAnnotationsFull.TestNG_Grouping"></class>
+		</classes>
+	</test>
+</suite>
